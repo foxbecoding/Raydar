@@ -7,3 +7,5 @@ pub struct RaydarConfig {
     pub swap_fee_amount: f64,
     pub swap_hold_time: u64,
 }
+
+impl RaydarConfig {}
