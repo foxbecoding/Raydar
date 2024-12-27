@@ -8,4 +8,6 @@ pub struct RaydarConfig {
     pub swap_hold_time: u64,
 }
 
-impl RaydarConfig {}
+impl RaydarConfig {
+    fn new() -> Self {}
+}
