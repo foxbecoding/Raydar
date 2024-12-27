@@ -1,0 +1,3 @@
+swap_amount=0.01
+swap_fee_amount=0.006
+swap_hold_time=30 # time is in seconds
