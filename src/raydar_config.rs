@@ -9,7 +9,7 @@ pub struct RaydarConfig {
 }
 
 impl RaydarConfig {
-    fn new() -> Self {
+    pub fn new() -> Self {
         let settings = Config::builder()
             .add_source(File::with_name("raydar_config.toml"))
             .build()
