@@ -9,5 +9,15 @@ pub struct RaydarConfig {
 }
 
 impl RaydarConfig {
-    fn new() -> Self {}
+    fn new() -> Self {
+        let settings = Config::builder()
+            .add_source(File::with_name("raydar_config.toml"))
+            .build()
+            .expect("Failed to access config fail");
+
+        let config: Self = settings
+            .try_deserialize()
+            .expect("Failed to deserialize raydar config");
+        config
+    }
 }
